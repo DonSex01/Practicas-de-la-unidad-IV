@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> presiona enter para que la pagina sea color humilde</h1>
+    <h1> presiona Ctrl + enter para que la pagina sea color rojo como el rayo Mcqueen</h1>
+</body>
+<script>
+    window.addEventListener("keydown", function (e){
+        if (e.key == "Enter"){
+            document.body.style.background = "black";
+        }
+        if (e.key == "Enter"&& e.ctrlKey){
+            document.body.style.background = "red";
+        }
+    })
+    window.addEventListener("keyup", function(e){
+        if (e.key =="Enter"){ 
+        document.body.style.background ="";
+        }
+    })
+        
+</script>
+</html>
